@@ -14,36 +14,78 @@ $ad_settings = array(
     
     'type'      =>  'async',
     
-    //This is the client ID Adsense assigns you. You have the option of assigning this at a per ad unit level or you can leave this blank and use the client ID you set globally
+    /* This is the client ID Adsense assigns you. You have the option of assigning this at a per
+     * ad unit level or you can leave this blank and use the client ID you set globally
+    */
+    
     'clientid'  =>  '',
-    //This is the unique ID Adsense give syou when you create an ad in their system
+    
+    /* This is the unique ID Adsense give syou when you create an ad in their system */
+    
     'slotid'    =>  21313423545,
-    //If you create a channel and assign an ad to it, you can put the channel ID Adsense assigns it here
+    
+    /* If you create a channel and assign an ad to it, you can put the channel ID Adsense assigns it here */
+    
     'channel'   =>  '',
-    //This allows you to specify the format of the ad, this is used for responsive ads only. The options are auto, horizontal, vertical or rectangle
+    
+    /* This allows you to specify the format of the ad, this is used for responsive ads only.
+     * The options are auto, horizontal, vertical or rectangle
+    */
+    
     'format'    =>  '',
-    //This allows you to add any custom comments you want to display for this ad. It uses hidden comments so the person wont see it on the page itself, unless they view the code
+    
+    /* This allows you to add any custom comments you want to display for this ad. It uses hidden
+     * comments so the person wont see it on the page itself, unless they view the code
+     
     'comments'  =>  '',
-    //This allows you to use custom css styles. If left empty, it will use display:block by default
+    
+    /* This allows you to use custom css styles. If left empty, it will use display:block by default */
+    
     'style'     =>  '',
-    //This allows you to use a custom class name for this ad unit
+    
+    /* This allows you to use a custom class name for this ad unit */
+    
     'class'     =>  '',
-    //This allows you to turn on/off full width ads for mobile. The attribute is data-full-width-responsive
+    
+    /* This allows you to turn on/off full width ads for mobile. The attribute this uses is
+     * data-full-width-responsive with it being true or false, depending on the value below
+    */
+    
     'mobile'    =>  0,
-    //This allows you to include or not include the external JS file needed for your ad unit. You could either do it for each ad unit you create, or request it once using the public function generateIncludeScript() so you only include the script once
+    
+    /* This allows you to include or not include the external JS file needed for your ad unit. You
+     * could either do it for each ad unit you create, or request it once using the public function 
+     * generateIncludeScript() so you only include the script once in your page
+    */
+    
     'inscript'  =>  0,
-    //This allows you to include the push script needed for responsive ads. You can do it per ad unit, or do it just once by using the parent function generatePushScript()
+    
+    /* This allows you to include the push script needed for responsive ads. You can do it per ad
+     * unit, or do it just once by using the parent function generatePushScript()
+    */
+    
     'inpush'    =>  0,
-    //If you have Ezoic and need to wrap your Adsense ads, put your Ezoic ID here
+    
+    /* If you have Ezoic and need to wrap your Adsense ads, put your Ezoic ID here */
+    
     'ezid'      =>  0,
-    //If you have Ezoic and need to wrap your Adsense ads, put the name of the Ezoic unit here
+    
+    /* If you have Ezoic and need to wrap your Adsense ads, put the name of the Ezoic unit here */
+    
     'ezname'    =>  '',
-    ////If you have Ezoic and need to wrap your Adsense ads, put the location of the Ezoic place holder here
+    
+    /* If you have Ezoic and need to wrap your Adsense ads, put the location of the Ezoic place holder here */
+    
     'ezplace'   =>  '',
-    //If you are using a non responsive ad, you need to specify the height and width here
+    
+    /* If you are using a non responsive ad, you need to specify the height and width here */
+    
     'height'   =>  0,
-    ////If you are using a non responsive ad, you need to specify the height and width here
+    
+    /* If you are using a non responsive ad, you need to specify the height and width here */
+    
     'width'    =>  0
+    
 );
     
 //This calls the Adsense generation class
