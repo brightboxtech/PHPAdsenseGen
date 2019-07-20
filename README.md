@@ -24,7 +24,9 @@ $ad_settings = array(
     
     'slotid'    =>  21313423545,
     
-    /* If you create a channel and assign an ad to it, you can put the channel ID Adsense assigns it here */
+    /* If you create a channel and assign an ad to it, you can put the channel ID Adsense
+     * assigns it here
+    */
     
     'channel'   =>  '',
     
@@ -39,7 +41,9 @@ $ad_settings = array(
      
     'comments'  =>  '',
     
-    /* This allows you to use custom css styles. If left empty, it will use display:block by default */
+    /* This allows you to use custom css styles. If left empty, it will use display:block
+     * by default
+    */
     
     'style'     =>  '',
     
@@ -74,7 +78,9 @@ $ad_settings = array(
     
     'ezname'    =>  '',
     
-    /* If you have Ezoic and need to wrap your Adsense ads, put the location of the Ezoic place holder here */
+    /* If you have Ezoic and need to wrap your Adsense ads, put the location of the Ezoic place
+     * holder here
+    */
     
     'ezplace'   =>  '',
     
@@ -88,18 +94,30 @@ $ad_settings = array(
     
 );
     
-//This calls the Adsense generation class
+/* This calls the Adsense generation class */
 $adsense = new Adsense();
 
-//This assigns your Adsense client ID globally. So it will be used for each ad unit you generate from here on out, or you can also assign a client ID to a ad unit specifically through the settings array above
+/* This assigns your Adsense client ID globally. So it will be used for each ad unit you
+ * generate from here on out, or you can also assign a client ID to a ad unit specifically
+ * through the settings array above
+*/
 $adsense->setClientID('pub-123565325');
 
-//This allows you to set the current status of your ads. The options are none (Meaning dont display any ads), test (Meaning only display a div place holder that will use your custom style and or class you set in the settings array above or live (This will create the live ad to use on your page)
+/* This allows you to set the current status of your ads. The options are none (Meaning
+ * dont display any ads), test (Meaning only display a div place holder that will use your
+ * custom style and or class you set in the settings array above or live (This will create
+ * the live ad to use on your page)
+*/
 $adsense->setAdStatus('live');
 
-//This allows you to set the custom style and class to be used if your ad status is set to test. That you you dont have to set it for every ad you generate. It will use this for every test ad. You can use both or either or
+/* This allows you to set the custom style and class to be used if your ad status is set
+ * to test. That you you dont have to set it for every ad you generate. It will use this
+ * for every test ad. You can use both or either or
+*/
 $adsense->setadDefaultStyle('border:1px #000 solid;height:100px;','testadclass');
 
-//This generates the ad unit based off the settings array above. It will assign the ad unit code to the variable, or you can simply just echo it out
+/* This generates the ad unit based off the settings array above. It will assign the ad
+ * unit code to the variable, or you can simply just echo it out
+*/
 $ad_unit = $adsense->generateAdUnit($ad_settings);
 ```
