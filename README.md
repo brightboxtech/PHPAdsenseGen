@@ -7,7 +7,8 @@ You can simply include the main file and it will then allow you to generate Adse
 include('./adsense.php');
     
 $ad_settings = array(
-    //This tells the class which type of code you want to build the ad unit for. Options are async for responsive ads or sync
+    //This tells the class which type of code you want to build the ad unit for. Options are async for
+    responsive ads or sync
     'type'      =>  'async',
     //This is the client ID Adsense assigns you. You have the option of assigning this at a per ad unit level or you can leave this blank and use the client ID you set globally
     'clientid'  =>  '',
