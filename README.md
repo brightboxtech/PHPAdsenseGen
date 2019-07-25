@@ -1,7 +1,7 @@
 # PHPAdsenseGen
 Simple class to generate adsense units for both asynchronous (responsive) and synchronous ads
 
-You can simply include the main file and it will then allow you to generate Adsense ads for your site using PHP. For Ezoic users who also has Adsense on their site, you can also use this to generate the Ezoic wrap code to wrap your Adsense code with your Ezoic placeholders. Below is an example.
+You can simply include the main file and it will then allow you to generate Adsense ads for your site using PHP. For Ezoic users who also has Adsense on their site, you can also use this to generate the Ezoic wrap code to wrap your Adsense code with your Ezoic placeholders. I created this class under the PHP version 7.3.4. Below is an example:
 
 ``` php
 include('./adsense.php');
